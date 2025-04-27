@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #00ffff;
+    font-family: 'Arial', sans-serif;
+}
+.jarvis-container {
+    text-align: center;
+    margin-top: 100px;
+}
+.logo {
+    width: 200px;
+    border-radius: 50%;
+}
+h1 {
+    font-size: 50px;
+    color: white;
+}
+h1 span {
+    color: #00ffff;
+}
+p {
+    font-size: 20px;
+    color: #aaa;
+}
+.circle {
+    width: 120px;
+    height: 120px;
+    background-color: #00ffff;
+    border-radius: 50%;
+    margin: 30px auto;
+    animation: glow 1s infinite alternate;
+}
+.wave {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #00ffff, transparent);
+    animation: wave 2s infinite linear;
+}
+h3 {
+    font-size: 25px;
+}
+h3 span {
+    color: white;
+}
+@keyframes glow {
+    from { box-shadow: 0 0 20px #00ffff; }
+    to { box-shadow: 0 0 50px #00ffff; }
+}
+@keyframes wave {
+    from { background-position: 0; }
+    to { background-position: 100% 0; }
+}

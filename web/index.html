@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis AI - Desktop Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="jarvis-container">
+        <img src="logo1.jpg" class="logo">
+        <h1>Hello, I'm <span>JARVIS AI</span></h1>
+        <p>My Personal Desktop Assistant</p>
+
+        <div class="circle"></div>
+        <div class="wave"></div>
+
+        <h3>Status: <span>Listening...</span></h3>
+
+    </div>
+
+    <script type="text/javascript" src="/eel.js"></script>
+<script>
+    window.onload = function () {
+        eel.start_jarvis();
+    };
+
+    eel.expose(updateStatus);
+    function updateStatus(text) {
+        document.querySelector("h3 span").innerText = text;
+    }
+</script>
+
+
+</body>
+</html>
